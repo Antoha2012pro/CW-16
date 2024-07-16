@@ -1,0 +1,24 @@
+.box {
+    width: 1000px;
+    height: 500px;
+    background-color: aqua;
+    background-image: url(../img/image.png), url(../img/image-2.png), url(../img/image-3.png), url(../img/image-4.png);
+    background-repeat: repeat-y, repeat-y, repeat-y, repeat-y;
+    background-position: left, 33% 33%, 67% 67%, right;
+    background-size: 250px 250px, 250px 250px, 250px 250px, 250px 250px;
+}
+
+.title::after {
+    content: "";
+    width: 300px;
+    height: 150px;
+    display: none;
+    background-image: url(../img/gerb.png), url(../img/ukraine.jpg);
+    background-size: 20px 20px, contain;
+    background-position: 5% 5%;
+    background-repeat: no-repeat, no-repeat;
+    }
+
+.title:hover::after {
+    display: block;
+}
